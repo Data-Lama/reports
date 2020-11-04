@@ -1,2 +1,2 @@
-# reports
-Repository for the weekly reports
+# Reports
+Repository for the weekly reports.
