@@ -27,6 +27,10 @@ body {
     display: none;
 }
 
+#NotFound{
+    height: 80vh;
+}
+
 @media (max-width: 1150px) {
     .cintilla {
         display: block;

@@ -1,9 +1,14 @@
 import React from 'react'
+import {BlockInformation} from './Auxiliares/BlockInformation'
 
 export const NotFound = () =>{
     return(
-        <div className="container text-center">
-            <h1> Página no encontrada </h1>
+        <div className="bodyPage">
+            <BlockInformation
+                id={"NotFound"}
+                titulo={"Página no encontrada"}
+                texto ={"La página a la que deseas acceder no se encuentra"}
+            />
         </div>
     )
 }

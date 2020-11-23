@@ -6,6 +6,7 @@ import { Proyecciones } from './ReporteActual/Proyecciones';
 import { Alertas } from './ReporteActual/Alertas';
 import '../Styles/ReporteActual.css'
 import { useEffect } from 'react';
+import { NotFound } from './NotFound';
 
 export const ReporteActual = () => {
     const location = useLocation()
