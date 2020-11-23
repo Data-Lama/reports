@@ -1,0 +1,65 @@
+.bannerHistorico{
+    background: #D49797;
+    display: flex ;
+}
+
+.contentBH{
+    color: white;
+    margin: 66px 0px 66px 11vw;
+}
+
+.imgBH{
+    padding: 52px 11vw 52px 52px;
+}
+
+.titleBH{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    line-height: 47px;
+}
+
+.subtitleBH{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.cardHistorico {
+    padding: 38px 55px 24px;
+    background: #FFFFFF;
+    border-radius: 28px;
+}
+
+.containerCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 26px;
+    row-gap: 26px;
+}
+
+.linkHistoricos {
+    margin-top: 40px;
+    display: flex;
+}
+
+.linkHistoricos a {
+    text-decoration: none;
+    color: white;
+    background: #D59797;
+    padding: 15px 65px;
+    border-radius: 12px;
+}
+
+.titleCardHistorico{
+    font-weight: 700;
+    font-size: 20px;
+    color: #505050;
+}
+@media(min-width: 1800px)
+{
+    .containerCards {
+        grid-template-columns: 33% 33% 33%;
+    }
+}

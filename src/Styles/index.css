@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    font-family: roboto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.bodyPage {
+    background-image: url("../Images/BG_triangles.png");
+    background-color: #E5E5E5;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 40px 11vw;
+}
+
+.grafica {
+    margin: 20px 0px 40px;
+    min-height: 700px;
+    display: block;
+}
+
+.cintilla {
+    display: none;
+}
+
+@media (max-width: 1150px) {
+    .cintilla {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background: #858585;
+        padding: 30px;
+        color: white;
+        top: 0;
+    }
+
+    .navbar{
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,123 @@
+.bannerImgHome {
+    background-image: url("../Images/Banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 30vw 100px 11vw;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.descripcion {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    padding-right: 20vw;
+}
+
+#sobreProyecto {
+    margin-top: 100px;
+}
+
+#equipo {
+    margin-top: 150px;
+}
+
+#titleReportesYDatos {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin: 100px 0px 40px;
+}
+
+.wrapperCard {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 26px;
+}
+
+.cardReport {
+    background: white;
+    padding: 40px;
+    border-radius: 28px;
+}
+
+.titleCard {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #505050;
+    margin-bottom: 20px;
+}
+
+.bodyCard {
+    font-size: 20px;
+    line-height: 30px;
+    color: #505050;
+    margin-bottom: 36px;
+}
+
+a.buttonCard {
+    text-decoration: none;
+    color: white;
+    background: #D59797;
+    padding: 15px 20px 15px 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 12px;
+    line-height: 30px;
+}
+
+a.buttonCard::after {
+    content: ">";
+    margin-left: 55px;
+}
+
+.wraperCardsMembers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 80px;
+    row-gap: 50px;
+    color: #505050;
+    font-size: 20px;
+}
+
+.imgMember {
+    width: 185px;
+    height: auto;
+}
+
+.cardMember  {
+    text-align: center;
+}
+
+@media(max-width: 1150px) {
+    .wraperCardsMembers {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media(max-width: 1980px) and (min-width: 1150px) {
+    .wraperCardsMembers {
+        grid-template-columns: repeat(4, auto);
+    }
+    #cardMember8 {
+        grid-column: 2;
+    }
+    #cardMember9 {
+        grid-column: 3;
+    }
+}
+
+@media(min-width: 1230px) and (max-width: 1724px) {
+    .cardReport:last-child>.bodyCard {
+        margin-bottom: 50px;
+        margin-top: 36px;
+    }
+}

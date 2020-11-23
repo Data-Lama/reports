@@ -1,0 +1,116 @@
+.logo-rosario {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    color: #F3F3F3;
+    display: flex;
+    
+    
+}
+
+.logo-rosario::before{
+    content: " ";
+    background-image: url("../Images/LOGOBLANCO.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px;
+}
+
+.navbar {
+    background-color: #222222;
+    padding-left: 11vw;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.optionsNavbar {
+    display: block;
+    width: 100%;
+}
+
+.optionsNavbar .row {
+    justify-content: flex-end;
+}
+
+.menu.off {
+    display: none;
+}
+
+.menu.on {
+    position: absolute;
+    background: #505050;
+}
+
+.menu.on .linkNav {
+    border-top: 0.1px solid #8D8D8D;
+    padding: 20px 45px;
+}
+
+.linkNav {
+    color: #D5D5D5;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 40px;
+    text-align: center;
+    display: block;
+}
+
+.linkNav:hover, .linkNav.Active {
+    color: white
+}
+
+span.linkNav::after {
+    content: " ";
+    background-image: url("../Images/Polygon\ 7.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+span.linkNav.on::after {
+    background-image: url("../Images/Polygon\ 7on.svg");
+}
+
+.subnav a:hover {
+    text-decoration: underline;
+}
+
+.button-navbar {
+    padding: 0px;
+}
+
+.button-navbar.on {
+    padding: 0px;
+    background: #505050;
+}
+
+.footer {
+    color: #E5E5E5;
+    background: #858585;
+    padding: 40px 200px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.RosarioContent {
+    border-bottom: 1px solid #BCBCBC;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.RosarioContent div:last-child {
+    font-weight: 400;
+}

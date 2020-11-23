@@ -1,0 +1,15 @@
+.titleBlock{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    line-height: 35px;
+}
+
+.bodyBlock{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    color: #505050;
+
+}

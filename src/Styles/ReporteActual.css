@@ -1,0 +1,33 @@
+.option{
+    padding: 0px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.option.Active{
+    text-decoration: underline;
+}
+
+.subnav{
+    padding: 30px 11vw;
+    background: #D49797;    
+}
+
+.subnav span{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    padding-right: 20px;
+}
+
+.titleReporteActual{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.textGraphs{
+    color: #505050;
+}

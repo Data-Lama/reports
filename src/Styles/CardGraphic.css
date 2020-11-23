@@ -1,0 +1,42 @@
+.CardGraphic {
+    color: #505050;
+    background-color: white;
+    margin: 10px;
+    border-radius: 28px;
+}
+
+.CardGraphic p{
+    padding: 54px 24px 8px;
+    margin: 0px;
+}
+
+.CardGraphic.on {
+    color: white;
+    background-color: #D49797;
+}
+
+.wrapperCardGraphic{
+    margin: 40px -10px;
+}
+.grid{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.grid:first-child{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon > img{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.rowCards{
+    margin: 0px -10px;
+}
