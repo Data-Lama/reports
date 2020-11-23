@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Home.css'
 import { BlockInformation } from './Auxiliares/BlockInformation'
-import { A } from 'hookrouter';
+import { Link } from 'react-router-dom';
 import P1 from '../Images/p1.png'
 import P2 from '../Images/p2.png'
 import P3 from '../Images/p3.png'
@@ -80,9 +80,9 @@ function CardReporte({ title, body, link }) {
             <div className="bodyCard">
                 {body}
             </div>
-            <A className="buttonCard" href={link} onClick={() => { window.scrollTo(0, 0) }}>
+            <Link className="buttonCard" to={link} onClick={() => { window.scrollTo(0, 0) }}>
                 Ver más
-            </A>
+            </Link>
         </div>
     )
 }

@@ -1,23 +1,16 @@
 import React, { useState } from 'react'
-import { useRoutes, A, usePath } from 'hookrouter';
+import {Switch , Route, Link, useLocation, useRouteMatch} from 'react-router-dom'
 import { Resumen } from './ReporteActual/Resumen';
 import { Movilidad } from './ReporteActual/MovilidadYCasos';
 import { Proyecciones } from './ReporteActual/Proyecciones';
 import { Alertas } from './ReporteActual/Alertas';
-import { NotFound } from './NotFound';
 import '../Styles/ReporteActual.css'
 import { useEffect } from 'react';
 
-const routesReporte = {
-    '/Resumen': ()=>(content) => <Resumen content={content}/>,
-    '/MovilidadCasos': ()=>(content) => <Movilidad content={content}/>,
-    '/Proyecciones': ()=>(content) => <Proyecciones content={content}/>,
-    '/Alertas': ()=>(content) => <Alertas content={content}/>
-}
-
 export const ReporteActual = () => {
-    const match1 = useRoutes(routesReporte);
-    const path = usePath();
+    const location = useLocation()
+    const path = location.pathname;
+    const match = useRouteMatch();
     const [content, setContent] = useState({
         resumen: "RS Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, sit quod repudiandae itaque impedit hic fugiat dolorem aliquam ipsa est possimus rem enim quam officia suscipit rerum animi saepe nisi!",
         movilidadCasos: "MC Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, sit quod repudiandae itaque impedit hic fugiat dolorem aliquam ipsa est possimus rem enim quam officia suscipit rerum animi saepe nisi!",
@@ -48,13 +41,18 @@ export const ReporteActual = () => {
         <div>
             <div className="row subnav">
                 <span>REPORTE ACTUAL</span>
-                <A className={path.includes("Resumen") ? "option Active" : "option"} href="Resumen" >Resumen</A>
-                <A className={path.includes("Movilidad") ? "option Active" : "option"} href="MovilidadCasos" >Movilidad y casos</A>
-                <A className={path.includes("Proyecciones") ? "option Active" : "option"} href="Proyecciones" >Proyecciones</A>
-                <A className={path.includes("Alertas") ? "option Active" : "option"} href="Alertas" >Alertas</A>
+                <Link className={path.includes("Resumen") ? "option Active" : "option"} to={`${match.url}/Resumen`} >Resumen</Link>
+                <Link className={path.includes("Movilidad") ? "option Active" : "option"} to={`${match.url}/MovilidadCasos`} >Movilidad y casos</Link>
+                <Link className={path.includes("Proyecciones") ? "option Active" : "option"} to={`${match.url}/Proyecciones`} >Proyecciones</Link>
+                <Link className={path.includes("Alertas") ? "option Active" : "option"} to={`${match.url}/Alertas`} >Alertas</Link>
             </div>
             <div className="bodyPage">
-                {match1(content) || <NotFound/>}
+                <Switch>
+                    <Route path={`${match.url}/Resumen`}> <Resumen content={content}/> </Route>
+                    <Route path={`${match.url}/MovilidadCasos`}> <Movilidad content={content}/> </Route>
+                    <Route path={`${match.url}/Proyecciones`}> <Proyecciones content={content}/> </Route>
+                    <Route path={`${match.url}/Alertas`}> <Alertas content={content}/> </Route>
+                </Switch>
             </div>
         </div>
     )

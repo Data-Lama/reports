@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {setBasepath} from 'hookrouter'
+import { HashRouter } from 'react-router-dom';
 import './Styles/index.css';
 import App from './Landing';
 
-// setBasepath("/dashboard-covid")
 ReactDOM.render(
-    <App />,
+  <HashRouter>
+    <App key={"principalComponent"} />
+  </HashRouter>,
   document.getElementById('root')
 );
 
