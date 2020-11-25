@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Rutas de URL:
 
 La ruta del contenido de la página (la sección de reporte actual) es: src\Components\ReporteActual.jsx -> linea 34
+
 La ruta para las cards de los reportes históricos es : src\Components\HistoricoReportes.jsx -> linea 14
 
 ## Comandos a tener en cuenta
