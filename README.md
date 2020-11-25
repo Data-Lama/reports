@@ -25,7 +25,7 @@ Una vez terminado los cambios en desarrollo, puede ejecutar `npm run deploy` par
 Este comando realiza el proceso de build en la rama gh-pages del repositorio.
 
 Una vez realizado el deploy, sobre la rama gh-pages, se debe crear un archivo con nombre "CNAME" el cual va a contener el dominio de la página:
-[https://datalama.polyglot.site/#/](datalama.polyglot.site)
+[datalama.polyglot.site](https://datalama.polyglot.site/#/)
 
 ## Learn More
 
