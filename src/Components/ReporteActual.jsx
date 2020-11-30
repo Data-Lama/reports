@@ -31,7 +31,7 @@ export const ReporteActual = () => {
     }, [])
 
     const loadData = async () => {
-        await fetch("https://gist.githubusercontent.com/ap3rg/229442bbb207ab82bcd640d1f14c62bb/raw/6bd43d7b0c78ab048fd51a118ab753c53e4a9364/footnotes.json")
+        await fetch("https://raw.githubusercontent.com/Data-Lama/reports/main/public/footnotes.json")
             .then(response => response.json())
             .then(data => setContent(data))
             .catch((err)=>{
