@@ -11,7 +11,7 @@ export const HistoricoReportes = () => {
     }, [])
 
     const loadData = async () => {
-        await fetch("https://raw.githubusercontent.com/jcsanguino10/VisualAnalytics/master/data.json")
+        await fetch("https://gist.githubusercontent.com/ap3rg/cfb1d4007578c1d5c4a4e9c49627ba1c/raw/657057ef715b98d82126361d81674ef190c65a79/historic_reports.json")
             .then(response => response.json())
             .then(data => setHisorico(data))
     }
